@@ -21,6 +21,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 30px;
   border-radius: 5px;
+  backdrop-filter: blur(10px);
 }
 
 .tm-contact-form .form-control {
@@ -150,6 +151,43 @@ body {
   background-color: #a71d2a;
 }
 
+.tm-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tm-box h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tm-box p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tm-box span {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.tm-box a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tm-box a:hover {
+  text-decoration: underline;
+}
+
   </style>
   <!--
     
@@ -205,21 +243,15 @@ https://templatemo.com/tm-553-xtra-blog
           </form>
         </div>
         <div class="col-lg-5 tm-contact-right">
-          <address class="mb-4 tm-color-gray">
-            120 Lorem ipsum dolor sit amet, consectetur adipiscing 10550
-          </address>
-          <span class="d-block">
-            Tel:
-            <a href="tel:060-070-0980" class="tm-color-gray">060-070-0980</a>
-          </span>
-          <span class="mb-4 d-block">
-            Email:
-            <a href="mailto:info@company.com" class="tm-color-gray">info@company.com</a>
-          </span>
-          <p class="mb-5 tm-line-height-short">
-            Maecenas eu mi eu dui cursus consequat non eu metus. Morbi ac turpis eleifend, commodo purus eget,
-            commodo mauris.
-          </p>
+          <div class="tm-box">
+            <h3>Contact Information</h3>
+            <span>120 Lorem ipsum dolor sit amet,</span>
+            <span>consectetur adipiscing 10550</span>
+            <span>Tel: <a href="tel:060-070-0980" class="tm-color-gray">060-070-0980</a></span>
+            <span>Email: <a href="mailto:info@company.com" class="tm-color-gray">info@company.com</a></span>
+            <p>Maecenas eu mi eu dui cursus consequat non eu metus. Morbi ac turpis eleifend, commodo purus eget,
+              commodo mauris.</p>
+          </div>
           <ul class="tm-social-links">
             <li class="mb-2">
               <a href="https://facebook.com" class="d-flex align-items-center justify-content-center">
