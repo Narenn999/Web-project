@@ -188,6 +188,33 @@ body {
   text-decoration: underline;
 }
 
+.tm-social-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.tm-social-links li {
+  margin-right: 10px;
+}
+
+.tm-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tm-social-links a:hover {
+  background-color: #007bff;
+}
+
   </style>
   <!--
     
@@ -281,8 +308,8 @@ https://templatemo.com/tm-553-xtra-blog
         <div class="col-md-6 col-12 tm-color-gray">
           Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
         </div>
-        <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-          Copyright 2020 Xtra Blog Company Co. Ltd.
+        <div class="col-md-6 col-12 tm-color-gray">
+          <span>© 2020 Xtra Blog Company Co. Ltd. All Rights Reserved.</span>
         </div>
       </footer>
     </main>
