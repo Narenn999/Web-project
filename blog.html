@@ -6,16 +6,376 @@
 	<title>Xtra Blog</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
-<!--
-    
-TemplateMo 553 Xtra Blog
-
-https://templatemo.com/tm-553-xtra-blog
-
--->
 </head>
+	<style>
+		/* Custom CSS for Xtra Blog Template */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.tm-header {
+  background-color: #222;
+  padding: 20px 0;
+}
+
+.tm-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tm-site-header {
+  margin-bottom: 30px;
+}
+
+.tm-site-logo {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  color: #222;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.tm-nav {
+  margin-bottom: 30px;
+}
+
+.tm-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tm-nav-item {
+  margin-right: 30px;
+}
+
+.tm-nav-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.tm-nav-link i {
+  margin-right: 5px;
+}
+
+.tm-nav-item.active .tm-nav-link {
+  font-weight: bold;
+}
+
+.tm-mb-65 {
+  margin-bottom: 65px;
+}
+
+.tm-social-link {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.tm-social-icon {
+  transition: color 0.3s;
+}
+
+.tm-social-link:hover .tm-social-icon {
+  color: #007bff;
+}
+
+.tm-mb-80 {
+  margin-bottom: 80px;
+}
+
+.tm-main {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.tm-search-form {
+  justify-content: center;
+}
+
+.tm-search-input {
+  width: 300px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.tm-search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.tm-search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tm-search-icon {
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.tm-search-button:hover .tm-search-icon {
+  color: #0056b3;
+}
+
+.tm-post-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tm-hr-primary {
+  border-top: 1px solid #007bff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tm-comment {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.tm-comment-figure {
+  margin-right: 15px;
+}
+
+.tm-comment-figure img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tm-comment figure figcaption {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.tm-comment p {
+  margin-bottom: 5px;
+}
+
+.tm-comment .text-right {
+  font-size: 12px;
+}
+
+.tm-category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tm-category-list li {
+  margin-bottom: 10px;
+}
+
+.tm-post-sidebar {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tm-post-sidebar h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tm-post-sidebar figure {
+  margin-bottom: 20px;
+}
+
+.tm-post-sidebar figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.tm-post-sidebar figcaption {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.tm-color-gray {
+  color: #999;
+}
+
+.tm-external-link {
+  color: #999;
+  text-decoration: none;
+}
+
+.tm-external-link:hover {
+  text-decoration: underline;
+}
+
+.tm-color-primary {
+  color: #007bff;
+}
+
+.tm-color-primary:hover {
+  color: #0056b3;
+}
+
+.tm-btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tm-btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.tm-btn-small {
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+.tm-color-white {
+  color: #fff;
+}
+
+.tm-color-white:hover {
+  color: #f2f2f2;
+}
+
+.tm-color-gray-light {
+  color: #999;
+}
+
+.tm-color-primary-light {
+  color: #66a3ff;
+}
+
+/* Custom CSS for Tripzee Template */
+.tm-post-title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.tm-post-title a:hover {
+  text-decoration: underline;
+}
+
+.tm-post-full p {
+  margin-bottom: 15px;
+}
+
+.tm-post-full span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.tm-post-sidebar hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.tm-comment-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.tm-comment-form textarea.form-control {
+  resize: none;
+}
+
+.tm-comment-form .tm-btn-primary {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.tm-comment-form .tm-btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.tm-comment-reply {
+  margin-bottom: 30px;
+}
+
+.tm-comment-reply hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tm-comment-reply .tm-comment {
+  margin-bottom: 15px;
+}
+
+.tm-comment-reply .tm-comment p {
+  margin-bottom: 0;
+}
+
+.tm-comment-reply .text-right {
+  font-size: 12px;
+}
+
+footer .tm-color-gray {
+  font-size: 14px;
+}
+
+footer .tm-color-gray a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer .tm-color-gray a:hover {
+  text-decoration: underline;
+}
+
+footer .tm-color-gray .tm-external-link {
+  color: #999;
+  text-decoration: none;
+}
+
+footer .tm-color-gray .tm-external-link:hover {
+  text-decoration: underline;
+}
+
+footer .tm-color-gray .tm-color-primary {
+  color: #007bff;
+}
+
+footer .tm-color-gray .tm-color-primary:hover {
+  color: #0056b3;
+}
+
+footer .tm-color-gray .tm-color-primary-light {
+  color: #66a3ff;
+}
+
+	</style>
 <body>
 	<header class="tm-header" id="tm-header">
         <div class="tm-header-wrapper">
