@@ -6,9 +6,17 @@
 	<title>Xtra Blog</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
-</head>
-	<style>
-		/* Custom CSS for Xtra Blog Template */
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+<!--
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
+-->
+<style>
+    /* Custom CSS for Xtra Blog Template */
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #f7f7f7;
@@ -41,6 +49,15 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 24px;
+}
+
+.tm-home-link {
+  color: #222;
+  text-decoration: none;
+}
+
+.tm-home-link:hover {
+  text-decoration: none;
 }
 
 .tm-nav {
@@ -223,142 +240,6 @@ body {
   text-decoration: none;
 }
 
-.tm-external-link:hover {
-  text-decoration: underline;
-}
-
-.tm-color-primary {
-  color: #007bff;
-}
-
-.tm-color-primary:hover {
-  color: #0056b3;
-}
-
-.tm-btn-primary {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.tm-btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.tm-btn-small {
-  padding: 6px 16px;
-  font-size: 14px;
-}
-
-.tm-color-white {
-  color: #fff;
-}
-
-.tm-color-white:hover {
-  color: #f2f2f2;
-}
-
-.tm-color-gray-light {
-  color: #999;
-}
-
-.tm-color-primary-light {
-  color: #66a3ff;
-}
-
-/* Custom CSS for Tripzee Template */
-.tm-post-title a {
-  color: #333;
-  text-decoration: none;
-}
-
-.tm-post-title a:hover {
-  text-decoration: underline;
-}
-
-.tm-post-full p {
-  margin-bottom: 15px;
-}
-
-.tm-post-full span {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.tm-post-sidebar hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.tm-comment-form .form-control {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-}
-
-.tm-comment-form textarea.form-control {
-  resize: none;
-}
-
-.tm-comment-form .tm-btn-primary {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  transition: background-color 0.3s;
-}
-
-.tm-comment-form .tm-btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.tm-comment-reply {
-  margin-bottom: 30px;
-}
-
-.tm-comment-reply hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.tm-comment-reply .tm-comment {
-  margin-bottom: 15px;
-}
-
-.tm-comment-reply .tm-comment p {
-  margin-bottom: 0;
-}
-
-.tm-comment-reply .text-right {
-  font-size: 12px;
-}
-
-footer .tm-color-gray {
-  font-size: 14px;
-}
-
-footer .tm-color-gray a {
-  color: #999;
-  text-decoration: none;
-}
-
-footer .tm-color-gray a:hover {
-  text-decoration: underline;
-}
-
-footer .tm-color-gray .tm-external-link {
-  color: #999;
-  text-decoration: none;
-}
-
 footer .tm-color-gray .tm-external-link:hover {
   text-decoration: underline;
 }
@@ -374,16 +255,13 @@ footer .tm-color-gray .tm-color-primary:hover {
 footer .tm-color-gray .tm-color-primary-light {
   color: #66a3ff;
 }
-
-	</style>
+</style>
+</head>
 <body>
 	<header class="tm-header" id="tm-header">
         <div class="tm-header-wrapper">
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
             <div class="tm-site-header">
-                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <a href="tripzee-home.html" class="tm-home-link"><div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div></a>
                 <h1 class="text-center">Xtra Blog</h1>
             </div>
             <nav class="tm-nav" id="tm-nav">            
