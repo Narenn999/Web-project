@@ -4,11 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xtra Blog - Contact</title>
-  <link rel="stylesheet" href="fontawesome/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <title>Xtra Blog</title>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
@@ -44,91 +40,7 @@
       background-color: #fde02f;
     }
 
-    /* Sidebar Styles */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 200px;
-      height: 100vh;
-      background-color: rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(10px);
-      overflow-y: auto;
-      padding: 20px;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .sidebar li {
-      margin-bottom: 10px;
-    }
-
-    .sidebar a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #333;
-      font-size: 16px;
-      transition: all 0.3s ease-in-out;
-      padding: 10px;
-      border-radius: 5px;
-    }
-
-    .sidebar a:hover {
-      background-color: #7b4ee4;
-      color: #fff;
-    }
-
-    .sidebar i {
-      margin-right: 10px;
-    }
-
-    /* Scrollbar Styles */
-    .sidebar::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    .sidebar::-webkit-scrollbar-thumb {
-      background-color: #888;
-      border-radius: 4px;
-    }
-
-    .sidebar::-webkit-scrollbar-thumb:hover {
-      background-color: #555;
-    }
-
-    .sidebar::-webkit-scrollbar-track {
-      background-color: #f2f2f2;
-    }
-
-    /* Content Styles */
-    .content {
-      margin-right: 220px;
-      padding: 20px;
-    }
-
-    /* Footer Styles */
-    .footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    #map {
-      width: 200px;
-      height: 150px;
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-    }
-
-    /* Nav Bar Styles */
+    /*========================Nav Bar=========================*/
     .nav-bar {
       display: flex;
       flex-flow: row wrap;
@@ -176,7 +88,7 @@
       text-decoration: underline;
     }
 
-    /* Banner Styles */
+    /*=============================Banner=============================*/
     .banner {
       background-image: url("https://cdn.pixabay.com/photo/2023/06/07/16/18/vietnam-8047523_1280.jpg");
       background-size: cover;
@@ -271,11 +183,7 @@
       font-family: "Barlow Condensed";
     }
 
-    .banner-text-item .book:hover {
-      background-color: #ffc342;
-    }
-
-    /* Services Styles */
+    /*===========================Services===========================*/
     .services {
       display: flex;
       flex-flow: row;
@@ -314,7 +222,7 @@
       flex: 1;
     }
 
-    /* Places Styles */
+    /*=============================Places===============================*/
     .places-text {
       text-align: center;
       margin-bottom: 50px;
@@ -390,33 +298,8 @@
       font-size: 20px;
     }
 
-    /* Zoom in Photos */
-    .zoom-img {
-      float: left;
-      position: relative;
-      width: 100%;
-      height: 320px;
-      overflow: hidden;
-    }
-
-    .zoom-img .img-card {
-      position: absolute;
-      overflow: hidden;
-    }
-
-    .img-card img {
-      -webkit-transition: 0.8s ease;
-      transition: 0.8s ease;
-    }
-
-    .card:hover .zoom-img img {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-
-    /* About Us Styles */
+    /*=========================About Us=========================*/
     .about {
-      background-color: #f2f2f2;
       display: flex;
       flex-flow: row wrap;
       align-items: center;
@@ -444,6 +327,7 @@
     .about-text p,
     .about-text input,
     .about-text a {
+      flex: 1;
       font-family: Roboto;
     }
 
@@ -456,13 +340,13 @@
       font-family: Barlow Condensed;
       font-size: 60px;
       color: #191d34;
-      letter-spacing: 1px;
     }
 
     .about-text label {
       padding-bottom: 10px;
       color: #506172;
       font-weight: bolder;
+      font-family: Roboto;
       letter-spacing: 1px;
     }
 
@@ -478,7 +362,6 @@
       border: 2px solid #014b85;
       text-decoration: none;
       border-radius: 5px;
-      width: 180px;
       padding: 20px;
       text-align: center;
       margin-top: 50px;
@@ -492,14 +375,14 @@
       color: #fff;
     }
 
-    /* Footer Styles */
+    /*===============Footer===================*/
     .footer {
       background-image: url("https://cdn.pixabay.com/photo/2021/02/05/01/22/man-5983064_1280.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       width: 100%;
-      height: 670px;
+      height: 300px;
       position: relative;
       display: flex;
       flex-flow: row wrap;
@@ -548,352 +431,115 @@
     .links li:hover {
       color: #ffa801;
     }
-
-    /* Responsive Styles */
-    @media all and (max-width: 1172px) {
-      .banner-text-item .form {
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-      }
-
-      .banner-text-item .form input,
-      .banner-text-item .form .date,
-      .banner-text-item .form .book {
-        flex: 1;
-        margin-bottom: 5px;
-        font-size: 14px;
-      }
-
-      .banner-text-item .form input {
-        width: 60%;
-      }
-
-      .banner-text-item .form .date {
-        width: 30%;
-      }
-
-      .banner-text-item .form .book {
-        width: 10%;
-        font-size: 14px;
-      }
-
-      .banner-heading h1 {
-        font-size: 60px;
-      }
-    }
-
-    @media all and (max-width: 1414px) {
-      .banner-text-item .form input {
-        width: 40%;
-      }
-
-      .banner-text-item .form .date {
-        width: 30%;
-      }
-
-      .banner-text-item .form .book {
-        width: 20%;
-        font-size: 14px;
-      }
-    }
-
-    @media all and (max-width: 942px) {
-      .nav-bar {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        text-align: center;
-        position: static;
-      }
-
-      .logo {
-        flex: 1;
-        font-size: 30px;
-        margin: 10px auto;
-        font-family: Satisfy;
-        color: #fde02f;
-      }
-
-      .nav-bar ul {
-        display: none;
-      }
-
-      .nav-bar ul li {
-        flex: 1;
-        margin-bottom: 5px;
-        font-size: 14px;
-      }
-
-      .services {
-        display: flex;
-        flex-flow: column wrap;
-      }
-
-      .services .service-item {
-        flex: 1;
-        margin-bottom: -130px;
-        width: 400px;
-      }
-
-      .places-text {
-        margin-top: 200px;
-      }
-    }
-
-    @media all and (max-width: 928px) {
-      .banner .form input,
-      a {
-        font-size: 12px;
-      }
-    }
-
-    @media all and (max-width: 1173px) {
-      .banner .form {
-        background-color: transparent;
-      }
-    }
-
-    @media all and (max-width: 1194px) {
-      .places .card-box p {
-        font-size: 14px;
-      }
-    }
-
-    @media all and (max-width: 1086px) {
-      .places .cards .text {
-        line-height: 40px;
-      }
-
-      .cards .text .h2 {
-        font-size: 12px;
-      }
-
-      .cards .img-card img {
-        height: 260px;
-      }
-    }
-
-    @media all and (max-width: 974px) {
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-gap: 20px;
-      }
-
-      .card {
-        width: 300px;
-        height: 500px;
-        margin: auto;
-      }
-
-      .cards .img-card img {
-        height: 200px;
-      }
-
-      .cards .time,
-      .cards .location {
-        font-size: 14px;
-      }
-
-      .places-text {
-        margin-top: 150px;
-      }
-    }
-
-    @media all and (max-width: 767px) {
-      .about {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 50px;
-      }
-
-      .about-img {
-        flex: 1;
-        margin-bottom: 50px;
-      }
-
-      .about-img img {
-        width: 300px;
-        height: 400px;
-        box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
-      }
-
-      .about-text {
-        flex: 1;
-        margin-bottom: 50px;
-      }
-
-      .about-text h2 {
-        font-size: 30px;
-      }
-
-      .about-text p {
-        font-size: 16px;
-      }
-
-      .about-text a {
-        width: 140px;
-      }
-
-      .footer {
-        height: 630px;
-      }
-    }
-
-    @media all and (max-width: 577px) {
-      .banner-heading h1 {
-        font-size: 40px;
-      }
-    }
   </style>
 </head>
 
 <body>
-  <div class="nav-bar">
+  <header class="nav-bar">
     <div class="logo">Xtra Blog</div>
     <ul class="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Places</a></li>
-      <li><a href="#">Contact</a></li>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
     </ul>
-  </div>
-
-  <div class="banner">
+  </header>
+  <section class="banner">
     <div class="banner-text-item">
       <div class="banner-heading">
-        <h1>Explore the World</h1>
+        <h1>Welcome to Xtra Blog</h1>
       </div>
-      <form class="form">
-        <input type="text" placeholder="Destination" />
-        <input type="date" class="date" />
-        <a href="#" class="book">Book</a>
-      </form>
+      <div class="banner-text-item">
+        <form class="form">
+          <input type="text" placeholder="Enter your name">
+          <input type="text" class="date" placeholder="Select a date">
+          <a href="#" class="book">Book</a>
+        </form>
+      </div>
     </div>
-  </div>
-
-  <div class="services">
+  </section>
+  <section class="services">
     <div class="service-item">
-      <img src="https://cdn.pixabay.com/photo/2018/04/03/01/06/bali-3281194_1280.jpg" alt="Service 1" />
+      <img src="https://via.placeholder.com/100" alt="Service 1">
       <h2>Service 1</h2>
     </div>
     <div class="service-item">
-      <img src="https://cdn.pixabay.com/photo/2015/03/26/10/39/canoe-690867_1280.jpg" alt="Service 2" />
+      <img src="https://via.placeholder.com/100" alt="Service 2">
       <h2>Service 2</h2>
     </div>
     <div class="service-item">
-      <img src="https://cdn.pixabay.com/photo/2015/12/08/00/30/road-1081703_1280.jpg" alt="Service 3" />
+      <img src="https://via.placeholder.com/100" alt="Service 3">
       <h2>Service 3</h2>
     </div>
-  </div>
-
-  <div class="places">
+  </section>
+  <section class="places">
     <div class="places-text">
-      <small>Popular Destinations</small>
-      <h2>Best Places to Visit</h2>
+      <small>Popular Places</small>
+      <h2>Discover Amazing Destinations</h2>
     </div>
     <div class="cards">
       <div class="card">
         <div class="zoom-img">
           <div class="img-card">
-            <img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_1280.jpg" alt="Place 1" />
+            <img src="https://via.placeholder.com/300" alt="Place 1">
           </div>
         </div>
         <div class="text">
-          <h2>Place 1</h2>
-          <div class="card-box">
-            <p class="time">2 Days</p>
-            <p class="location">Location</p>
-            <p class="cost">From $200</p>
-          </div>
+          <p class="time">Time: 9 AM - 6 PM</p>
+          <p class="location">Location: City, Country</p>
+          <p class="cost">Cost: $50</p>
         </div>
       </div>
       <div class="card">
         <div class="zoom-img">
           <div class="img-card">
-            <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="Place 2" />
+            <img src="https://via.placeholder.com/300" alt="Place 2">
           </div>
         </div>
         <div class="text">
-          <h2>Place 2</h2>
-          <div class="card-box">
-            <p class="time">3 Days</p>
-            <p class="location">Location</p>
-            <p class="cost">From $300</p>
-          </div>
+          <p class="time">Time: 9 AM - 6 PM</p>
+          <p class="location">Location: City, Country</p>
+          <p class="cost">Cost: $50</p>
         </div>
       </div>
       <div class="card">
         <div class="zoom-img">
           <div class="img-card">
-            <img src="https://cdn.pixabay.com/photo/2018/08/12/16/59/paris-3608007_1280.jpg" alt="Place 3" />
+            <img src="https://via.placeholder.com/300" alt="Place 3">
           </div>
         </div>
         <div class="text">
-          <h2>Place 3</h2>
-          <div class="card-box">
-            <p class="time">5 Days</p>
-            <p class="location">Location</p>
-            <p class="cost">From $500</p>
-          </div>
+          <p class="time">Time: 9 AM - 6 PM</p>
+          <p class="location">Location: City, Country</p>
+          <p class="cost">Cost: $50</p>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="about">
+  </section>
+  <section class="about">
     <div class="about-img">
-      <img src="https://cdn.pixabay.com/photo/2017/10/02/13/16/nature-2800138_1280.jpg" alt="About Us" />
+      <img src="https://via.placeholder.com/500x700" alt="About Us Image">
     </div>
     <div class="about-text">
-      <small>Welcome to Xtra Blog</small>
-      <h2>About Us</h2>
-      <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis ultrices elit, id pellentesque sem
-        efficitur ac. Nunc venenatis euismod eros, id maximus ligula egestas eu. In ac tincidunt lectus, sit amet
-        efficitur tellus. Sed tempor urna sed felis aliquet, sit amet ullamcorper velit rutrum. Proin suscipit, leo
-        nec finibus auctor, nulla erat suscipit dui, sed cursus nunc arcu nec leo. Fusce euismod sollicitudin orci ut
-        bibendum. Phasellus sed dolor nec elit laoreet bibendum.
-      </p>
+      <small>Why Choose Us?</small>
+      <h2>About Xtra Blog</h2>
+      <label>Our Story</label>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mauris libero. Donec iaculis gravida
+        leo non commodo. Aliquam erat volutpat. Nulla facilisi. Quisque facilisis ultrices quam, at cursus magna
+        dictum nec. Vestibulum vulputate massa at rutrum sodales. Curabitur non consequat leo, eu consequat mauris.
+        Phasellus eu ex id mi ultrices faucibus ac a ipsum. Quisque volutpat ante a eros facilisis, in venenatis
+        lorem efficitur.</p>
       <a href="#">Learn More</a>
     </div>
-  </div>
-
+  </section>
   <footer class="footer">
     <div class="links">
-      <h3>Quick Links</h3>
       <ul>
-        <li>About Us</li>
+        <h3>Quick Links</h3>
+        <li>Home</li>
+        <li>About</li>
         <li>Services</li>
-        <li>Places</li>
         <li>Contact</li>
-      </ul>
-    </div>
-    <div class="links">
-      <h3>Contact Info</h3>
-      <ul>
-        <li>123 Main St, New York, NY 10001</li>
-        <li>+1 123-456-7890</li>
-        <li>info@example.com</li>
-      </ul>
-    </div>
-    <div class="links">
-      <h3>Follow Us</h3>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="https://cdn-icons-png.flaticon.com/128/2111/2111463.png">Instagram</a></li>
       </ul>
     </div>
   </footer>
