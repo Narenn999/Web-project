@@ -287,20 +287,7 @@
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 
             <script>
-                const sidebar = document.querySelector('.sidebar');
-                const content = document.querySelector('.content');
-
-                // Function to toggle sidebar visibility
-                function toggleSidebar() {
-                    sidebar.classList.toggle('sidebar-hidden');
-                    content.classList.toggle('content-full');
-                }
-
-                // Add click event listener to toggle button
-                const toggleButton = document.createElement('button');
-                toggleButton.textContent = 'Toggle Sidebar';
-                toggleButton.addEventListener('click', toggleSidebar);
-                document.body.prepend(toggleButton);
+             
 
                 // Scroll to section on link click
                 const scrollLinks = document.querySelectorAll('.scroll-link');
@@ -310,8 +297,7 @@
                         const sectionId = link.getAttribute('href').substring(1);
                         const section = document.getElementById(sectionId);
                         section.scrollIntoView({ behavior: 'smooth' });
-                    });
-                });
+                    
             </script>
         </div>
     </div>
