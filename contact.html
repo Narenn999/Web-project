@@ -7,225 +7,232 @@
   <title>Xtra Blog - Contact</title>
   <link rel="stylesheet" href="fontawesome/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
   <style>
-   /* Additional CSS styles specific to the contact page */
-body {
-  background-image: url("https://img.freepik.com/free-photo/toronto-skyline-from-park_649448-3488.jpg?w=996&t=st=1689621446~exp=1689622046~hmac=fa086564b0bce5c78602f8f34f059cb206c39e624a3f88bdd4096b6f67b94bba");
-  background-size: cover;
-}
+    /* Additional CSS styles specific to the contact page */
+    body {
+      background-image: url("https://img.freepik.com/free-photo/toronto-skyline-from-park_649448-3488.jpg?w=996&t=st=1689621446~exp=1689622046~hmac=fa086564b0bce5c78602f8f34f059cb206c39e624a3f88bdd4096b6f67b94bba");
+      background-size: cover;
+    }
 
-.tm-contact-form {
-  margin-top: 30px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 5px;
-  backdrop-filter: blur(10px);
-}
+    .tm-contact-form {
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 5px;
+      backdrop-filter: blur(10px);
+    }
 
-.tm-contact-form .form-control {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-}
+    .tm-contact-form .form-control {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
 
-.tm-contact-form textarea.form-control {
-  resize: none;
-}
+    .tm-contact-form textarea.form-control {
+      resize: none;
+    }
 
-.tm-contact-form .tm-btn-primary {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-contact-form .tm-btn-primary {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-contact-form .tm-btn-primary:hover {
-  background-color: #0056b3;
-}
+    .tm-contact-form .tm-btn-primary:hover {
+      background-color: #0056b3;
+    }
 
-.tm-contact-right .tm-social-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
+    .tm-contact-right .tm-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 5px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 
-.tm-contact-right .tm-social-links li {
-  margin-right: 10px;
-}
+    .tm-contact-right .tm-box h3 {
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
 
-.tm-contact-right .tm-social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background-color: #ddd;
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-contact-right .tm-box p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
 
-.tm-contact-right .tm-social-links a:hover {
-  background-color: #007bff;
-}
+    .tm-contact-right .tm-box span {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: block;
+    }
 
-/* Colorful Buttons */
-.tm-btn-primary {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-contact-right .tm-box a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.tm-btn-primary:hover {
-  background-color: #0056b3;
-}
+    .tm-contact-right .tm-box a:hover {
+      text-decoration: underline;
+    }
 
-.tm-btn-secondary {
-  background-color: #6c757d;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-contact-right .tm-social-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
 
-.tm-btn-secondary:hover {
-  background-color: #4e5459;
-}
+    .tm-contact-right .tm-social-links li {
+      margin-right: 10px;
+    }
 
-.tm-btn-success {
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-contact-right .tm-social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background-color: #ddd;
+      border-radius: 50%;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-btn-success:hover {
-  background-color: #1f8840;
-}
+    .tm-contact-right .tm-social-links a:hover {
+      background-color: #007bff;
+    }
 
-.tm-btn-warning {
-  background-color: #ffc107;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-btn-warning:hover {
-  background-color: #d39e00;
-}
+    .tm-btn-primary:hover {
+      background-color: #0056b3;
+    }
 
-.tm-btn-danger {
-  background-color: #dc3545;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-btn-secondary {
+      background-color: #6c757d;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-btn-danger:hover {
-  background-color: #a71d2a;
-}
+    .tm-btn-secondary:hover {
+      background-color: #4e5459;
+    }
 
-.tm-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 5px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
+    .tm-btn-success {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-box h3 {
-  color: #333;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
+    .tm-btn-success:hover {
+      background-color: #1f8840;
+    }
 
-.tm-box p {
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 15px;
-}
+    .tm-btn-warning {
+      background-color: #ffc107;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-box span {
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 10px;
-  display: block;
-}
+    .tm-btn-warning:hover {
+      background-color: #d39e00;
+    }
 
-.tm-box a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .tm-btn-danger {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-box a:hover {
-  text-decoration: underline;
-}
+    .tm-btn-danger:hover {
+      background-color: #a71d2a;
+    }
 
-.tm-social-links {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
+    .tm-social-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
 
-.tm-social-links li {
-  margin-right: 10px;
-}
+    .tm-social-links li {
+      margin-right: 10px;
+    }
 
-.tm-social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background-color: #ddd;
-  border-radius: 50%;
-  transition: background-color 0.3s ease-in-out;
-}
+    .tm-social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background-color: #ddd;
+      border-radius: 50%;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.tm-social-links a:hover {
-  background-color: #007bff;
-}
+    .tm-social-links a:hover {
+      background-color: #007bff;
+    }
 
+    .tm-footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .tm-footer p {
+      margin-bottom: 0;
+    }
   </style>
-
 </head>
 
 <body>
   <header class="tm-header" id="tm-header">
-  
+
   </header>
   <div class="container-fluid">
     <main class="tm-main">
-     
+
       <div class="row tm-row tm-mb-120">
         <div class="col-12">
           <h2 class="tm-color-primary tm-post-title tm-mb-60">Contact Us</h2>
@@ -270,34 +277,37 @@ body {
             <span>consectetur adipiscing 10550</span>
             <span>Tel: <a href="tel:061234567" class="tm-color-gray">0612345678</a></span>
             <span>Email: <a href="mailto:info@tripzee.com" class="tm-color-gray">iinfo@tripzee.com</a></span>
-            <p>Have you ever dreamed of escaping the hustle and bustle of city life and immersing yourself in the tranquility of nature? I</p>
+            <p>Have you ever dreamed of escaping the hustle and bustle of city life and immersing yourself in the tranquility of nature?</p>
           </div>
-         <div class="tm-mb-65">
+          <div class="tm-mb-65">
+            <ul class="tm-social-links">
+              <li>
                 <a href="https://facebook.com" class="tm-social-link">
-                    <i class="fab fa-facebook tm-social-icon"></i>
+                  <i class="fab fa-facebook tm-social-icon"></i>
                 </a>
+              </li>
+              <li>
                 <a href="https://twitter.com" class="tm-social-link">
-                    <i class="fab fa-twitter tm-social-icon"></i>
+                  <i class="fab fa-twitter tm-social-icon"></i>
                 </a>
+              </li>
+              <li>
                 <a href="https://instagram.com" class="tm-social-link">
-                    <i class="fab fa-instagram tm-social-icon"></i>
+                  <i class="fab fa-instagram tm-social-icon"></i>
                 </a>
+              </li>
+              <li>
                 <a href="https://linkedin.com" class="tm-social-link">
-                    <i class="fab fa-linkedin tm-social-icon"></i>
+                  <i class="fab fa-linkedin tm-social-icon"></i>
                 </a>
-              </a>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <!-- Footer code from the existing design -->
-      <footer class="row tm-row">
-        <div class="col-md-6 col-12 tm-color-gray">
-          Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
-        </div>
-        <div class="col-md-6 col-12 tm-color-gray">
-          <span>© 2023 Tripzee Company Co. Ltd. All Rights Reserved.</span>
-        </div>
+
+      <footer class="tm-footer">
+        <p>© 2023 Tripzee Company Co. Ltd. All Rights Reserved.</p>
       </footer>
     </main>
   </div>
