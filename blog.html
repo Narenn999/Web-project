@@ -33,12 +33,22 @@
 
     /* Styles for the header */
     .header {
-      background: url("https://cdn.pixabay.com/photo/2022/08/19/14/06/waterfall-7397017_1280.jpg") fixed;
-      background-size: cover;
-      background-position: center;
+      position: relative;
       padding: 200px 0;
       text-align: center;
       color: #fff;
+    }
+
+    .header:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      z-index: -1;
     }
 
     .header h2 {
@@ -90,12 +100,22 @@
 
     /* Styles for the footer */
     .footer {
-      background: url("https://cdn.pixabay.com/photo/2022/08/19/14/06/waterfall-7397017_1280.jpg") fixed;
-      background-size: cover;
-      background-position: center;
+      position: relative;
       padding: 200px 0;
       text-align: center;
       color: #fff;
+    }
+
+    .footer:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      z-index: -1;
     }
 
     /* Right column */
@@ -141,8 +161,7 @@
 
 <body>
   <div class="header">
-    <h2>Blog</h2>
-    <h3 class="animate-text">Have you ever dreamed of escaping the hustle and bustle of city life and immersing yourself in the tranquility of nature?</h3>
+    <h2 class="animate-text">Have you ever dreamed of escaping the hustle and bustle of city life and immersing yourself in the tranquility of nature?</h2>
   </div>
 
   <div class="row">
@@ -177,6 +196,8 @@
       </div>
     </div>
   </div>
+
+  <div class="footer"></div>
 
   <script>
     // JavaScript for sliding animation
