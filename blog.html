@@ -37,6 +37,7 @@
       padding: 200px 0;
       text-align: center;
       color: #fff;
+      transition: background-color 0.3s ease-in-out;
     }
 
     .header:before {
@@ -49,11 +50,16 @@
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
       z-index: -1;
+      transition: background-color 0.3s ease-in-out;
     }
 
     .header h2 {
       margin: 0;
       animation: slide-up 1s ease-in-out;
+    }
+
+    .header:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
 
     /* Styles for the cards */
@@ -68,6 +74,7 @@
 
     .card:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
     }
 
     .card h2 {
@@ -104,6 +111,7 @@
       padding: 200px 0;
       text-align: center;
       color: #fff;
+      transition: background-color 0.3s ease-in-out;
     }
 
     .footer:before {
@@ -116,6 +124,11 @@
       background: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
       z-index: -1;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .footer:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
 
     /* Right column */
@@ -136,6 +149,7 @@
 
     .card:hover {
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
     }
 
     /* Clear floats after the columns */
@@ -155,6 +169,20 @@
         transform: translateY(0);
         opacity: 1;
       }
+    }
+
+    /* General Animation */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .animated-page {
+      animation: fadeIn 1s ease-in-out;
     }
   </style>
 </head>
@@ -213,6 +241,14 @@
           element.classList.add('slide-up');
         }
       });
+    }
+
+    // JavaScript for page animation
+    window.addEventListener('DOMContentLoaded', animatePage);
+
+    function animatePage() {
+      const page = document.querySelector('body');
+      page.classList.add('animated-page');
     }
   </script>
 </body>
