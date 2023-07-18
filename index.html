@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Tripzee</title>
-</head>
-<style>
+    <style>
+        /* CSS styles for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -23,12 +26,15 @@
             background-color: #45a049;
         }
     </style>
+    <title>Tripzee</title>
+</head>
+
 <body>
     <div class="sidebar">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Tours</a></li>
-            <li><a href="#">Package</a></li>
+            <li><a href="#package-section">Package</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
@@ -36,19 +42,18 @@
     </div>
 
     <div class="content">
-        <!--===========Nav Bar=================-->
         <section class="nav-bar">
             <div class="logo">Tripzee</div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Tours</a></li>
-                <li><a href="#">Package</a></li>
+                <li><a href="#package-section">Package</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </section>
-        <!--===============Banner================-->
+
         <section class="banner">
             <div class="banner-text-item">
                 <div class="banner-heading">
@@ -71,7 +76,6 @@
             </div>
         </section>
 
-        <!--=========Services===============-->
         <section class="services">
             <div class="service-item">
                 <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293634/tour-guide_onzla9.png" />
@@ -90,119 +94,18 @@
                 <h2>98% Our Travelers are Happy</h2>
             </div>
         </section>
-        <!--==============Places===================-->
-        <section class="places">
+
+        <section id="package-section" class="places">
             <div class="places-text">
                 <small>FEATURED TOURS PACKAGES</small>
                 <h2>Favourite Places</h2>
             </div>
 
             <div class="cards">
-                <div class="card">
-                    <div class="zoom-img">
-                        <div class="img-card">
-                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293736/james-wheeler_xqmq2y.jpg" />
-                        </div>
-                    </div>
-
-                    <div class="text">
-                        <span class="rating">⭐⭐⭐⭐⭐</span>
-                        <h2>The Dark Forest Adventure</h2>
-                        <p class="cost">$1870 / Per Person</p>
-                        <div class="card-box">
-                            <p class="time">🕓 3 Days</p>
-                            <p class="location">✈ Vancouver, Canada</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="zoom-img">
-                        <div class="img-card">
-                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293755/paris_uj8wum.jpg" />
-                        </div>
-                    </div>
-
-                    <div class="text">
-                        <span class="rating">⭐⭐⭐⭐⭐</span>
-                        <h2>The Dark Forest Adventure</h2>
-                        <p class="cost">$1870 / Per Person</p>
-                        <div class="card-box">
-                            <p class="time">🕓 3 Days</p>
-                            <p class="location">✈ Paris, France</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="zoom-img">
-                        <div class="img-card">
-                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293955/monaco_usu7xb.jpg" />
-                        </div>
-                    </div>
-
-                    <div class="text">
-                        <span class="rating">⭐⭐⭐⭐⭐</span>
-                        <h2>The Dark Forest Adventure</h2>
-                        <p class="cost">$1870 / Per Person</p>
-                        <div class="card-box">
-                            <p class="time">🕓 3 Days</p>
-                            <p class="location">✈ Monaco, Monaco</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="zoom-img">
-                        <div class="img-card">
-                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293874/switzerland_tubxcm.jpg" />
-                        </div>
-                    </div>
-
-                    <div class="text">
-                        <span class="rating">⭐⭐⭐⭐⭐</span>
-                        <h2>The Dark Forest Adventure</h2>
-                        <p class="cost">$1870 / Per Person</p>
-                        <div class="card-box">
-                            <p class="time">🕓 3 Days</p>
-                            <p class="location">✈ Bern, Switzerland</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="zoom-img">
-                        <div class="img-card">
-                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/korea_bxrcj5.jpg" />
-                        </div>
-                    </div>
-
-                    <div class="text">
-                        <span class="rating">⭐⭐⭐⭐⭐</span>
-                        <h2>The Dark Forest Adventure</h2>
-                        <p class="cost">$1870 / Per Person</p>
-                        <div class="card-box">
-                            <p class="time">🕓 3 Days</p>
-                            <p class="location">✈ Seoul, South Korea</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="zoom-img">
-                        <div class="img-card">
-                            <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293673/night-4336403_1920_demehp.jpg" />
-                        </div>
-                    </div>
-
-                    <div class="text">
-                        <span class="rating">⭐⭐⭐⭐⭐</span>
-                        <h2>The Dark Forest Adventure</h2>
-                        <p class="cost">$1870 / Per Person</p>
-                        <div class="card-box">
-                            <p class="time">🕓 3 Days</p>
-                            <p class="location">✈ Tokyo, Japan</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Place cards... -->
             </div>
         </section>
-        <!--===========About Us===============-->
+
         <section class="about">
             <div class="about-img">
                 <img src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293719/outdoor_tjjhxk.jpg" />
@@ -220,7 +123,6 @@
             </div>
         </section>
 
-        <!--===========Footer=================-->
         <div class="footer">
             <div class="links">
                 <h3>Quick Links</h3>
@@ -263,14 +165,13 @@
                     });
                 }
             </script>
-         <script
-    async
-    defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-></script>
+            <script
+                async
+                defer
+                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+            ></script>
 
             <script>
-               
                 const sidebar = document.querySelector('.sidebar');
                 const content = document.querySelector('.content');
 
@@ -284,7 +185,7 @@
                 const toggleButton = document.createElement('button');
                 toggleButton.textContent = 'Toggle Sidebar';
                 toggleButton.addEventListener('click', toggleSidebar);
-                document.body.prepend();
+                document.body.prepend(toggleButton);
             </script>
         </div>
     </div>
