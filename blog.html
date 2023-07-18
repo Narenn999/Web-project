@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xtra Blog - Home</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <style>
+    /* Styles for the layout */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      margin: 0;
+      background-color: #f1f1f1;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+    }
+
+    /* Styles for the header */
+    .header {
+      background: url("https://cdn.pixabay.com/photo/2022/08/19/14/06/waterfall-7397017_1280.jpg") fixed;
+      background-size: cover;
+      background-position: center;
+      padding: 200px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .header h2 {
+      margin: 0;
+    }
+
+    /* Styles for the cards */
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .card h5 {
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin-bottom: 0;
+    }
+
+    /* Styles for the images */
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    img:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styles for the footer */
+    .footer {
+      background: url("https://cdn.pixabay.com/photo/2022/08/19/14/06/waterfall-7397017_1280.jpg") fixed;
+      background-size: cover;
+      background-position: center;
+      padding: 200px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Clear floats after the columns */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h2>Blog</h2>
+  </div>
+
+  <div class="row">
+    <div class="column leftcolumn">
+      <div class="card">
+        <h2>Tripzee</h2>
+        <h5>Title description, Jul 18, 2023</h5>
+        <img src="https://cdn.pixabay.com/photo/2023/06/21/16/26/warnemunde-8079731_1280.jpg" alt="Image 1">
+        <p>Have you ever dreamed of escaping the hustle and bustle of city life and immersing yourself in the tranquility of nature? I recently had the opportunity to embark on a breathtaking trip to the majestic mountains, and it was an experience that left an indelible mark on my soul.</p>
+      </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Jul 18, 2023</h5>
+        <img src="https://cdn.pixabay.com/photo/2023/05/18/16/25/boat-8002718_1280.jpg" alt="Image 2">
+        <p>One of the highlights of my trip was an early morning hike to a secluded viewpoint. As the sun slowly rose, casting a warm golden glow across the mountains, I found myself captivated by the sheer magnificence of nature. The panoramic view took my breath away, and I couldn't help but feel a profound sense of gratitude for being able to witness such natural wonders.</p>
+      </div>
+    </div>
+    <div class="column rightcolumn">
+      <div class="card">
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+        <img src="https://cdn.pixabay.com/photo/2023/05/27/21/06/scooter-8022334_1280.jpg" alt="Image 4">
+        <br>
+        <img src="https://cdn.pixabay.com/photo/2023/07/04/10/20/river-8105970_1280.jpg" alt="Image 5">
+        <br>
+        <img src="https://cdn.pixabay.com/photo/2023/07/02/22/42/paragliding-8103063_1280.jpg" alt="Image 6">
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
