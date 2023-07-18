@@ -855,9 +855,6 @@
     <div class="about-img">
       <img src="https://cdn.pixabay.com/photo/2017/10/02/13/16/nature-2800138_1280.jpg" alt="About Us" />
     </div>
-    <div class="about-text">
-      <small>Welcome to Xtra Blog</small>
-      <h2>About Us</h2>
       <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis ultrices elit, id pellentesque sem
@@ -880,22 +877,13 @@
         <li>Contact</li>
       </ul>
     </div>
-    <div class="links">
-      <h3>Contact Info</h3>
-      <ul>
+    
         <li>123 Main St, New York, NY 10001</li>
         <li>+1 123-456-7890</li>
         <li>info@example.com</li>
       </ul>
     </div>
-    <div class="links">
-      <h3>Follow Us</h3>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-    </div>
+    
   </footer>
 </body>
 
