@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xtra Blog - Home</title>
+  <title>Tripzee Blog - Home</title>
   <link rel="stylesheet" href="fontawesome/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <style>
@@ -16,7 +16,7 @@
     body {
       font-family: 'Source Sans Pro', sans-serif;
       margin: 0;
-      background-color: #f1f1f1;
+      background-color: blue;
     }
 
     .row::after {
@@ -33,22 +33,12 @@
 
     /* Styles for the header */
     .header {
-      position: relative;
+      background: url("https://cdn.pixabay.com/photo/2022/08/19/14/06/waterfall-7397017_1280.jpg") fixed;
+      background-size: cover;
+      background-position: center;
       padding: 200px 0;
       text-align: center;
       color: #fff;
-    }
-
-    .header:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      z-index: -1;
     }
 
     .header h2 {
@@ -100,22 +90,12 @@
 
     /* Styles for the footer */
     .footer {
-      position: relative;
+      background: url("https://cdn.pixabay.com/photo/2022/08/19/14/06/waterfall-7397017_1280.jpg") fixed;
+      background-size: cover;
+      background-position: center;
       padding: 200px 0;
       text-align: center;
       color: #fff;
-    }
-
-    .footer:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(10px);
-      z-index: -1;
     }
 
     /* Right column */
@@ -161,7 +141,8 @@
 
 <body>
   <div class="header">
-    <h2 class="animate-text">Have you ever dreamed of escaping the hustle and bustle of city life and immersing yourself in the tranquility of nature?</h2>
+    
+    <h1 class="animate-text">Have you ever dreamed of escaping the hustle and bustle of city life and immersing yourself in the tranquility of nature?</h1>
   </div>
 
   <div class="row">
@@ -196,8 +177,6 @@
       </div>
     </div>
   </div>
-
-  <div class="footer"></div>
 
   <script>
     // JavaScript for sliding animation
